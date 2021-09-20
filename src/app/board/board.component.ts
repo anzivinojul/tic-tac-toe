@@ -26,11 +26,16 @@ export class BoardComponent implements OnInit {
   }
 
   get player() {
-    return this.xIsNext ? 'X' : 'O';
+    if(this.winner != '') {
+      return '';
+    }
+    else {
+      return this.xIsNext ? 'X' : 'O';
+    }
   }
 
   move(squarePosition: number) {
-    if(!this.squares[squarePosition]) {
+    if(!this.squares[squarePosition] && this.winner == '') {
       this.squares.splice(squarePosition, 1, this.player);
       this.xIsNext = !this.xIsNext;
       this.nextPlayer = this.player;
