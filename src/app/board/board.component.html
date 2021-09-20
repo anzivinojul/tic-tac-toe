@@ -14,10 +14,14 @@
   </main>
 
   <div class = "boxContentFooter">
-    <button (click)="newGame()">NOUVELLE PARTIE</button>
+    <div class="wrapper">
+      <a class="button" (click) = "newGame()" href="#">
+        <span>REJOUER</span>
+      </a>
+    </div>
 
     <h2 *ngIf="winner">
-      Joueur {{ winner }} a gagné la partie!
+      {{ winner }} a gagné la partie!
     </h2>
   </div>
 
