@@ -1,0 +1,9 @@
+<div id="multipleSquareEmpty" (mouseover)="showHover=true" (mouseout)="showHover=false">
+  <span [hidden]="showHover"><button id="squareEmpty" *ngIf="!value"> {{ value }} </button></span>
+  <span [hidden]="!showHover"><button id="squareEmpty" *ngIf="!value"> {{ player }} </button></span>
+
+  <button id="squareX" *ngIf="value == 'X'">{{ value }}</button>
+  <button id="squareO" *ngIf="value == 'O'">{{ value }}</button>
+</div>
+
+

@@ -1,0 +1,27 @@
+#multipleSquareEmpty {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  font-size: 5em !important;
+  border: 2px black solid;
+}
+
+#squareEmpty {
+  background-color: #050DFA;
+}
+
+#squareEmpty:hover {
+  background-color: #055FFA;
+}
+
+#squareX {
+  background-color: #FA4F05;
+}
+
+#squareO {
+  background-color: #5FFA05;
+}
